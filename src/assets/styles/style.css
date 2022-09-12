@@ -1,0 +1,45 @@
+/* general styling */
+@font-face {
+    font-family: 'arabic';
+    src: url(../fonts/arabic.ttf);
+}
+@font-face {
+    font-family: 'english';
+    src: url(../fonts/english.ttf);
+}
+
+* {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #eee;
+}
+
+.extra-font {
+    font-family: 'english';
+    font-size: 25px;
+}
+
+/* scroll bar style */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(238, 238, 238, 0);
+    margin: 0;
+}
+::-webkit-scrollbar-track:hover {
+    background: rgba(196, 196, 196, 0.5);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(199, 199, 199, 0); 
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(199, 199, 199);
+}
+
+/* scrollable comps */
+.scrollable-sheet {
+    overflow-y: auto;
+}
