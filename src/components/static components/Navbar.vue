@@ -29,7 +29,7 @@
           </div>
         </div>
 
-        <v-avatar
+        <!-- <v-avatar
         @click="$router.push(user.role === 'student' ? '/Profile' : '/teacher')"
         class="mx-5"
         color="primary darken-1 shrink"
@@ -43,7 +43,7 @@
           :src="user.avatar"
           alt="John"
           >
-        </v-avatar>
+        </v-avatar> -->
 
         <language-picker />
       </v-row>

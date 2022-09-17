@@ -17,7 +17,7 @@ import 'vue-phone-number-input/dist/vue-phone-number-input.css'
 import VueMasonry from 'vue-masonry-css'
 import Croppa from 'vue-croppa'
 import 'vue-croppa/dist/vue-croppa.css'
-
+import DanSelect from "./views/profile/DanSelect.vue";
 Vue.use(VueMasonry)
 Vue.use(Croppa)
 
@@ -27,7 +27,7 @@ Vue.prototype.$emojiGroups = EmojiGroups
 
 Vue.component('gallery', Gallery)
 Vue.component('vue-phone-number-input', VuePhoneNumberInput)
-
+Vue.component("DanSelect", DanSelect);
 Vue.use(VueAxios, axios)
 
 Vue.config.productionTip = false
@@ -38,9 +38,9 @@ Vue.filter('dateDisplay', (date) => {
 })
 
 new Vue({
-  router,
-  store,
-  vuetify,
-  i18n,
-  render: h => h(App)
-}).$mount('#app')
+	store,
+	vuetify,
+	i18n,
+	router,
+	render: (h) => h(App),
+}).$mount("#app");
